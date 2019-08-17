@@ -1,0 +1,1 @@
+Android App that can be used for searching movies using https://www.themoviedb.org/ API
