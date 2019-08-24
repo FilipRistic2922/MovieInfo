@@ -46,7 +46,7 @@ class HomeFragment : Fragment() {
 
     private fun setupTabLayout() {
         if (tabPageAdapter == null)
-            tabPageAdapter = TabPageAdapter(activity!!.supportFragmentManager, TABS_COUNT)
+            tabPageAdapter = TabPageAdapter(childFragmentManager, TABS_COUNT)
         binding.viewPager.offscreenPageLimit = TABS_COUNT;
         binding.viewPager.adapter = tabPageAdapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
